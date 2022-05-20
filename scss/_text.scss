@@ -11,40 +11,15 @@ $karla: 'karla', 'Abril Fatface', sans-serif;
 
 /******************************************Font Style******************************************************/
 
-/*Footer*/
-    #design{
-        @include text(center,$abril ,$display8 - 15% ,$dog-brown);
-        font-weight: 900;
-        .network{
-            p{
-                text-align: left;
-                a{
-            font-weight: 900;
-            text-decoration: none;
-            color:$dog-brown
-                }
-            }
-        }
-    }
-
-
 /******************************************Index.html*****************************************************/
     .title{
     h1{
-    @include text(center,$karla ,$display7 ,$dog-gold);
+    @include text(center,$karla ,$display8 ,$dog-gold);
     }
-}
-    .content{
         p{
-            @include text(center,$karla ,$display7 ,$dog-gold);
-        margin-top: 2%;
+            @include text(center,$karla ,$display9 ,$dog-gold);
+        margin-top: 10%;
         font-size: $display8;
         color:$dog-white;
         }
-
-        h2{
-        @include text(center,$karla ,$display7 ,$dog-gold);
-        font-size: $display7;
-        margin-top: 5%;
-        } 
     }
