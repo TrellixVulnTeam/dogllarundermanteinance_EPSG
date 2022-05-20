@@ -1,0 +1,92 @@
+//Usage of Responsive Content.
+
+/****************************************Mobile First Style*********************************************/
+
+@media screen and (min-width: 320px){
+
+}
+/***************************************1st Breakpoint. 720px*******************************************/
+@media screen and (min-width: 720px){
+
+div{
+#mysidenav{
+    display:none;
+    width: 100%;
+}
+}
+.sidenav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: $dog-black;
+    width: 100%;
+    margin-top:2%;
+    margin-bottom: 2%;
+    position: relative;
+        .closebtn{
+            display: none;
+        }
+}
+
+
+.sidenav a{
+    text-align: center;
+    margin:2%;
+    padding:1%;
+    color:$dog-yellow;
+        &:hover{
+            background-color: $dog-gold;
+            border: solid 2px $dog-brown;
+            border-radius: 15px;
+        }
+}
+span{
+    display: none;
+}
+
+#design{
+    .network{
+        font-size: $display7;
+    }
+    .sign{
+        font-size: $display7;
+    }
+}
+
+/*****************************************index.html**************************************************/
+.title{
+    img{
+        @include size(400px, 400px);
+    }
+    h1{
+        @include text(center,$abril,$display6,$dog-gold);
+    }
+}
+
+.content{
+    h2{
+        margin-left: 4%;
+        text-align: left;
+    }
+    p{
+    margin-left: 4%;
+    text-align: left;
+    }
+    
+}
+
+
+}
+/****************************************2nd Breakpoint. 1024px*****************************************/
+@media screen and (min-width: 1024px){
+
+/****************************************index.html****************************************************/
+.content{
+    video{
+        margin-top: 5%;
+        @include size(100%, 900px);
+    }
+}
+}

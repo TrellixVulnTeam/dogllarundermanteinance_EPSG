@@ -1,0 +1,18 @@
+.logo-head{
+margin: 0%;
+height: 250px;
+width: 250px;
+}
+
+.network{
+    img{
+        @include size (30px, 30px);
+    }
+}
+
+/*****************************************index.html**************************************************/
+.content{
+    video{
+        @include size(100%, auto);
+    }
+}
